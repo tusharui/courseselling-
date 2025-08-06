@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const {useRouter} = require("./routes/user");
 const jsonwebtoken =require("jsonwebtoken");
-const { useRouter } = require("./routes/user");
+const { courseRouter } = require("./routes/course");
 const {adminRouter} = require("./routes/admin");
 const JWT_SECRET ="jhgvcfghkjh"
 
