@@ -1,13 +1,14 @@
-const {Router} = require("express");
-const useRouter =Router();
-userouter.post('/signup',function(req,res){
+const {Router} = require("router");
+const courseRouter =Router();
+
+courseRouter.post('/signup',function(req,res){
     res.json({
         message :"signupendpoint"
     })
 })
 
 
-userouter.post('/signin ',function(req,res){
+courseRouter.get('/signin ',function(req,res){
    res.json({
         message: "signin endpoint"
     });

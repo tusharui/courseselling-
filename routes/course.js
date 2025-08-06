@@ -1,12 +1,18 @@
-app.get('/courses/purchase',function(req,res){
+const {Router} = require("express");
+const useRouter =  Router()
+useRouter.get('/purchase',function(req,res){
     res.json({
         message: "purchase a course"
     });
 })
 
-app.get('/courses   ',function(req,res){
+useRouter.get('/preview',function(req,res){
     res.json({
-        message: "all courses"
+        message: " courses preview endpoint"
     });
 })
+
+module.exports = {
+    useRouter : useRouter
+}
 
