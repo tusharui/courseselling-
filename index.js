@@ -3,10 +3,12 @@ const app = express();
 const {useRouter} = require("./routes/user");
 const jsonwebtoken =require("jsonwebtoken");
 const { useRouter } = require("./routes/user");
+const {adminRouter} = require("./routes/admin");
 const JWT_SECRET ="jhgvcfghkjh"
 
-app.use("/user",useRouter);
-app.use("/course", courseRouter);
+app.use("/api/v1/user",useRouter);
+app.use("/api/v1/course", courseRouter);
+app.use("/api/v1/admin",adminRouter);
 
 
 

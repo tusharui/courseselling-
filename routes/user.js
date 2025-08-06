@@ -8,13 +8,13 @@ courseRouter.post('/signup',function(req,res){
 })
 
 
-courseRouter.get('/signin ',function(req,res){
+courseRouter.post('/signin ',function(req,res){
    res.json({
         message: "signin endpoint"
     });
 })
 
-userouter.get('/purchases',function(req,res){
+userouter.post('/purchases',function(req,res){
      res.json({
         message: "user purchases"
     });
