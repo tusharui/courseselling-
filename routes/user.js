@@ -42,8 +42,15 @@ useRouter.post('/signin', async function (req, res) {
 });
 
 useRouter.post('/purchases', async function (req, res) {
+    const userId = req.userId;
+    const purchases = await purchaseModel.create.findOne({
+        userId,
+        
+    })
+    
+    
     res.json({
-        message: "user purchases"
+         purchases
     });
 });
 
