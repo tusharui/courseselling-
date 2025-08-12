@@ -6,6 +6,7 @@ const { courseRouter } = require("./routes/course");
 const {adminRouter} = require("./routes/admin");
 const JWT_SECRET ="jhgvcfghkjh"
 const mongoose = require("mongoose");
+app.use(express.json());
 
 app.use("/api/v1/user",useRouter);
 app.use("/api/v1/course", courseRouter);
